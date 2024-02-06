@@ -16,13 +16,7 @@
 			"npm run lint"
 		]
 	},
-  "husky":{
 
-      "hooks": {
-        "pre-commit": "lint-staged"
-      }
-
-  },
 	"private": true,
 	"dependencies": {
 		"@angular/animations": "^17.1.0",
