@@ -8,14 +8,21 @@
 		"watch": "ng build --watch --configuration development",
 		"test": "ng test",
 		"lint": "eslint src/**/*.ts",
-		"lint:fix": "npm run lint -- --fix"
-
+		"lint:fix": "npm run lint -- --fix",
+		"prepare": "husky"
 	},
 	"lint-staged": {
 		"*.ts": [
 			"npm run lint"
 		]
 	},
+  "husky":{
+
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+
+  },
 	"private": true,
 	"dependencies": {
 		"@angular/animations": "^17.1.0",
