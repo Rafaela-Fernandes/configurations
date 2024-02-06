@@ -8,8 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "eslint src/**/*.ts",
-    "lint:fix": "npm run lint -- --fix",
-    "prepare": "husky install"
+    "lint:fix": "npm run lint -- --fix"
+
   },
   "lint-staged":{
     "*.ts": [
