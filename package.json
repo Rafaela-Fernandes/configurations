@@ -10,7 +10,7 @@
 		"lint": "eslint src/**/*.ts",
 		"lint:fix": "npm run lint -- --fix",
 		"prepare": "husky",
-    "precommit": "npm run lint"
+    "precommit": "lint-staged"
 	},
 	"lint-staged": {
 		"*.ts": [
