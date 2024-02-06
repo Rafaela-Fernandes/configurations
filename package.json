@@ -8,14 +8,17 @@
 		"watch": "ng build --watch --configuration development",
 		"test": "ng test",
 		"lint": "eslint src/**/*.ts",
-		"lint:fix": "npm run lint -- --fix",
-		"prepare": "husky"
+		"lint:fix": "npm run lint -- --fix"
+
 	},
 	"lint-staged": {
-		"*.ts": [
-			"npm run lint"
+    "*.ts": [
+      "npm run lint"
 		]
 	},
+  "husky":{
+   "hooks":"npm run lint"
+  },
 
 	"private": true,
 	"dependencies": {
