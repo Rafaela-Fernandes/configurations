@@ -10,14 +10,13 @@
 		"lint": "eslint src/**/*.ts",
 		"lint:fix": "npm run lint -- --fix",
 		"prepare": "husky",
-    "precommit": "npm run lint"
+		"precommit": "npm run lint"
 	},
 	"lint-staged": {
 		"*.ts": [
 			"npm run lint"
 		]
 	},
-
 	"private": true,
 	"dependencies": {
 		"@angular/animations": "^17.1.0",
