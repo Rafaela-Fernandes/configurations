@@ -9,12 +9,13 @@
 		"test": "ng test",
 		"lint": "eslint src/**/*.ts",
 		"lint:fix": "npm run lint -- --fix",
-		"prepare": "husky"
+		"prepare": "husky",
+    "precommit": "npx lint-staged"
 	},
 	"lint-staged": {
 		"*.ts": [
-			"npm run lint",
-      "ng test"
+			"npm run lint"
+
 		]
 	},
 	"private": true,
